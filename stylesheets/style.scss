@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import './SCSS/general/color';
+@import './SCSS/general/barranav';
+@import './SCSS/general/boton';
+@import './SCSS/general/footer';
+@import './SCSS/general/tarjeta';
+@import './SCSS/courses/categoria';
+@import './SCSS/courses/cursos';
+@import './SCSS/courses/instructores';
+
+
+main {
+  min-height: 100vh;
+}
+
+.nav-link:hover {
+  color: $primary-color;
+}
+
+.course:hover {
+  --angle: 0deg;
+  border: 3px solid;
+  border-image: linear-gradient(var(--angle),#eeeeee, #e53935) 1;
+  
+  animation: 4s rotate linear infinite;
+}
+
+.scale:hover {
+  transform: scale(1.1,1.1)
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@media only screen and (max-width: 540px){
+  .banner img {
+    width: auto;
+    height: 15em;
+    object-fit: none;
+    object-position: -610px;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner img {
+    width: 100%;
+    object-fit: cover;
+
+  }
+}

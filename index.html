@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+  <title>Klein E-commerce</title>
+  <meta name="description" content="Klein es una plataforma de venta de cursos MOOCS especializados en desarrollo web en diferentes categorias, como backend, frontend, devops, uxui. A los mejores precios del mercado para tu mejor aprendizaje">
+  <meta keywords="Cursos, Desarrollo web, Klein, Angular, React,  ">
+</head>
+<body>
+  <div class="container-fluid p-0" style="background-color: #eceff1">
+    <!-- START HEADER -->
+    <header >
+      <nav class="barranav navbar-expand-lg barranav-dark">
+        <div class="barranav__contenedor">
+          <a class="navbar-brand barranav__brand" href="#">Klein</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            <form class="d-flex flex-grow-1 me-5 mt-2 mb-3 mb-lg-0">
+              <input class="form-control me-2" type="search" placeholder="Buscar curso" aria-label="Search">
+              <button class="boton boton-barra" type="submit">Buscar</button>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link barranav__link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./courses/frontend.html">Frontend</a></li>
+                  <li><a class="dropdown-item" href="./courses/backend.html">Backend</a></li>
+                  <li><a class="dropdown-item" href="./courses/uiux.html">UI/UX</a></li>
+                  <li><a class="dropdown-item" href="./courses/devops.html">Devops</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link barranav__link" href="./menu/mis_cursos.html">Mis cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link barranav__link" href="./menu/carro.html">Mi carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link barranav__link" href="./menu/notificaciones.html">Notificaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link barranav__link" aria-current="page" href="./menu/perfil.html">Perfil</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START MAIN -->
+    <main>
+      <!-- START CATEGORY NAVIGATION -->
+      <nav class="navbar-dark bg-dark">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link link-light scale" href="./courses/frontend.html">Frontend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light scale" href="./courses/backend.html">Backend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light scale" href="./courses/uiux.html">UI/UX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light scale" href="./courses/devops.html">Devops</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- START BANNER SECTION -->
+      <section class="banner">
+        <img src="./images/banner.jpg" class="img-fluid" alt="banner">
+      </section>
+
+      <!-- START MAIN COURSE SECTION -->
+      <section class="container flex-column mt-3 mb-3 pb-3">
+        <h2 class="p-3">Nuestras principales sugerencias para ti</h2>        <div class="tarjeta ms-auto me-auto border-0 p-3">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./images/Angular-De-cero-a-experto-creando-aplicaciones.jpg" class="img-fluid rounded-start" alt="main">
+            </div>
+            <div class="col-md-6">
+              <div class="tarjeta__cuerpo">
+                <h5 class="card-title">Angular: De cero a experto - ( Edición 2021 )</h5>
+                <p>Componentes, directivas, servicios, mapas, gráficas, JWT, autenticación, despliegues, mongo, Git, GitHub y mucho más</p>
+                <h4>9,99$us</h4>
+                <p><small class="text-muted">Fernando Herrera</small></p>
+                <button type="button" class="boton boton-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Agregar curso al carrito
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">El curso se agrego a su carrito</h5>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- START SECTION 1 -->
+      <section class="container flex-column border-0 mt-3 mb-3">
+        <h2>Que aprender ahora</h2>
+        <div class="row row-cols-xs-1 row-cols-md-3 row-cols-lg-5 g-4">
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/926512_6fdf_7.jpg" alt="1">
+              <div class="tarjeta__cuerpo">
+                <h5>Premiere Pro CC for Beginners: Video Editing in Premiere</h5>
+                <p>89,99$us</p>
+                <p><small class="text-muted">Phil Ebiner</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/627730_83d0_18.jpg" alt=2"">
+              <div class="tarjeta__cuerpo">
+                <h5>Adobe After Effects CC: Complete Course - Novice to Expert</h5>
+                <p>19,99$us</p>
+                <p><small class="text-muted">Daniel Walter</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/1879018_95b6_3.jpg" alt="3">
+              <div class="tarjeta__cuerpo">
+                <h5>NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)</h5>
+                <p>9,99$us</p>
+                <p><small class="text-muted">Maximilian Academind</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/3227583_5e75_6.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>Complete Web & Mobile Designer in 2021: UI/UX, Figma, +more</h5>
+                <p>29,99$us</p>
+                <p><small class="text-muted">Andrei Neagoie</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/2776760_f176_6.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>100 Days of Code - The Complete Python Pro Bootcamp for 2021</h5>
+                <p>9,99$us</p>
+                <p><small class="text-muted">Angela Yu</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- START SECTION 2 -->
+      <section class="container flex-column border-0 mt-3 mb-3">
+        <h2>images destacados</h2>
+        <div class="row row-cols-xs-1 row-cols-md-3 row-cols-lg-5 g-4">
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/1562070_d426_2.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>Node: De cero a experto ( Edición 2021 )</h5>
+                <p>19,99$us</p>
+                <p><small class="text-muted">Fernando Herrera</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/1341936_2776.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>Excel Completo - Desde Principiante Hasta Avanzado</h5>
+                <p>49,99$us</p>
+                <p><small class="text-muted">Miguel Maraby</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/3655146_832c_3.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>MERN Stack E-Commerce Mobile App with React Native [2021]</h5>
+                <p>39,99$us</p>
+                <p><small class="text-muted">Tiago Pereira</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/625204_436a_3.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>The Web Developer Bootcamp 2021</h5>
+                <p>9,99$us</p>
+                <p><small class="text-muted">Colt Steele</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tarjeta course">
+              <img src="./images/1743488_e3df_7.jpg" alt="">
+              <div class="tarjeta__cuerpo">
+                <h5>SQL - Curso completo de Bases de Datos - de 0 a Avanzado</h5>
+                <p>29,99$us</p>
+                <p><small class="text-muted">Pablo Tilota</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <footer class="footer">
+      <div class="footer__nav">
+        <ul>
+          <li><a class="social social-primary" href="./courses/frontend.html">Frontend</a></li>
+          <li><a class="social social-primary" href="./courses/backend.html">Backend</a></li>
+          <li><a class="social social-primary" href="./courses/uiux.html">UI/UX</a></li>
+          <li><a class="social social-primary" href="./courses/devops.html">Devops</a></li>
+          <li><a class="social social-primary" href="./menu/mis_cursos.html">Mis cursos</a></li>
+          <li><a class="social social-primary" href="./menu/carro.html">Mi carrito</a></li>
+          <li><a class="social social-primary" href="./menu/notificaciones.html">Notificaciones</a></li>
+          <li><a class="social social-primary" href="./menu/perfil.html">Perfil</a></li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h1 class="footer__container__title">Klein</h1>
+        <div class="footer__container__media">
+          <i class="fab fa-facebook social social-facebook"></i>
+          <i class="fab fa-instagram social social-instagram"></i>
+          <i class="fab fa-linkedin social social-linkedin"></i>
+          <i class="fab fa-github social social-github"></i>
+        </div>
+        <p class="footer__container__content">Copyright 1999-2021. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

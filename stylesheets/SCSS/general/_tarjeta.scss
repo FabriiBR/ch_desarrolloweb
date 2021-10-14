@@ -1,0 +1,12 @@
+.tarjeta {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  height: 100%!important;
+
+  &__cuerpo {
+    padding: 1rem;
+  }
+}

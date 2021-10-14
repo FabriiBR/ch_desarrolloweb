@@ -1,0 +1,24 @@
+.boton {
+  display: inline-block;
+  padding: (1rem * .5) (1rem * .75);
+  text-align: center;
+  border-radius: 5px;
+
+  &-barra {
+    border: 0.1px solid $primary-color;
+    background-color: #212529;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      border: none;
+      color: #f8f9fa;
+    }
+  }
+
+  &-primary {
+    background-color: $primary-color;
+    border: none;
+    color: #f8f9fa;
+  }
+}

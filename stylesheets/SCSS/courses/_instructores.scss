@@ -1,0 +1,25 @@
+.instructores {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  justify-content: center;
+
+  &__card {
+    margin: 1rem 0;
+    display: flex;
+    padding: 1rem 1rem 3rem 1rem;
+    column-gap: 0.5em;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    word-wrap: break-word;
+    height: 100%!important;
+
+    &__img img{
+      border-radius: 50px;
+    }
+
+    &__content p {
+      margin: 0;
+    }
+  }
+}

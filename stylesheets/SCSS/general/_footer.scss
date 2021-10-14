@@ -1,0 +1,135 @@
+@mixin mobile {
+  @media only screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+.footer {
+  align-items: center;
+  background-color: #212122;
+  color: #917272;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px;
+
+  &__container {
+    background-color: #212121;
+    color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    width: 100%;
+
+    &__media {
+      display: flex;
+      justify-content: center;
+      column-gap: 15px;
+      font-size: 25px;
+    }
+  }
+
+  @include mobile{
+    &__container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2vh;
+      row-gap: 10px;
+      &__title {
+        margin: 20px 0 0 0;
+        
+      }
+  
+      &__content {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #212121;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+// @mixin social-bg($bg) {
+//   &:hover{
+//     color: $bg;
+//   }
+// }
+
+$social:(
+  facebook: blue,
+  instagram: orange,
+  github: purple,
+  linkedin: lightblue,
+  primary: $primary-color
+);
+
+@each $soc, $color in $social {
+  .social-#{$soc}:hover{
+    color: $color;
+  }
+}
+
+.social {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+// .social-facebook {
+//   @include social-bg(blue)
+// }
+
+// .social-linkedin {
+//   @include social-bg(lightblue)
+// }
+
+// .social-github {
+//   @include social-bg(purple)
+// }
+
+// .social-instagram {
+//   @include social-bg(orange)
+// }
+
+// .social-primary {
+//   @include social-bg($primary-color)
+// }
+
+// @media only screen and (max-width: 540px){
+//   .footer {
+//     &__container {
+//       align-items: center;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       margin-top: 2vh;
+//       row-gap: 10px;
+//       &__title {
+//         margin: 20px 0 0 0;
+        
+//       }
+  
+//       &__content {
+//         margin: 0 0 20px 0;
+//       }
+//     }
+//   }
+// }
